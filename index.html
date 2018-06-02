@@ -26,7 +26,7 @@
             </ul>
             <div class="arrow">
                 <div class="prev"><</div>
-                <div class="next">></div>
+                
             </div>
             
         </div>
@@ -74,7 +74,7 @@
         /*自动播放*/
         var timer = setInterval(function(){
             nextYewu();
-        },5000);
+        },1900);
         /*鼠标进入slide显示箭头,清除自动播放*/
         $('#slide').on({
             mouseenter: function () {
@@ -86,7 +86,7 @@
                 clearInterval(timer);
                 timer = setInterval(function(){
                     nextYewu();
-                },5000)
+                },3000)
             }
         })
     })
